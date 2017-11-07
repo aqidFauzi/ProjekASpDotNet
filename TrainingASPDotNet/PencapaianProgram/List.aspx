@@ -14,15 +14,42 @@
     </div>
     <!-- END: Subheader -->
     <div class="m-content">
+        <div class="form-group">
         <asp:HyperLink ID="ButangTambah" NavigateUrl="~/PencapaianProgram/Add.aspx" CssClass="btn btn-primary" runat="server">Tambah</asp:HyperLink>
+        </div>
+
+        <asp:Repeater ID="ProgramRepeater" runat="server">
+            <HeaderTemplate>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Kod</th>
+                            <th>Tarikh</th>
+                            <th>Bilangan Hari</th>
+                            <th>Jenis</th>
+                        </tr>
+                    </thead>
+                    <tbody> 
+            </HeaderTemplate>
+
+            <ItemTemplate>
+                <tr>
+                    <td>
+                        <asp:HyperLink ID="HyperLink1" NavigateUrl='<%# "Edit.aspx?Id=" + Eval("Id") %>' runat="server">
+                            <%# Eval ("KodProgram") %>
+                        </asp:HyperLink>
+                    </td>
+                    <td><%# Eval ("TarikhProgram") %></td>
+                    <td><%# Eval ("BilanganHari") %></td>
+                    <td><%# Eval ("Lulus") %></td>
+                </tr>
+            </ItemTemplate>
+
+            <FooterTemplate>
+                </tbody>
+                </table>
+            </FooterTemplate>
+        </asp:Repeater>
     </div>
 
-    <table class="table">
-        <tr>
-            <td>Kod</td>
-            <td>Tarikh</td>
-            <td>Lulus</td>
-            <td>Jenis</td>
-        </tr>
-    </table>
 </asp:Content>
