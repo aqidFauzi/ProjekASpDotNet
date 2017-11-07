@@ -14,7 +14,7 @@
     </div>
     <!-- END: Subheader -->
     <div class="m-content">
-        <asp:HyperLink ID="ButangTambah" CssClass="btn btn-primary" runat="server">Tambah</asp:HyperLink>
+        <asp:HyperLink ID="ButangTambah" NavigateUrl="~/PencapaianProgram/Add.aspx" CssClass="btn btn-primary" runat="server">Tambah</asp:HyperLink>
     </div>
 
     <table class="table">
