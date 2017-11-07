@@ -284,6 +284,7 @@
     <Content Include="Assets\assets\vendors\base\fonts\summernote\summernote.ttf" />
     <Content Include="Assets\assets\vendors\base\fonts\summernote\summernote.woff" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="PencapaianProgram\List.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -353,6 +354,13 @@
     </Compile>
     <Compile Include="Metronic.Master.designer.cs">
       <DependentUpon>Metronic.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PencapaianProgram\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PencapaianProgram\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
